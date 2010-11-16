@@ -1,0 +1,33 @@
+
+{
+  "groupings": {
+  },
+  "attributes": {
+  },
+  "recommendations": {
+  },
+  "dependencies": {
+  },
+  "platforms": {
+    "mac_os_x": [
+
+    ]
+  },
+  "long_description": "",
+  "suggestions": {
+  },
+  "recipes": {
+  },
+  "license": "MIT",
+  "conflicting": {
+  },
+  "version": "0.1.0",
+  "providing": {
+  },
+  "maintainer": "Gabe Varela",
+  "description": "Installs/configures ruby via rvm",
+  "name": "rvm",
+  "replacing": {
+  },
+  "maintainer_email": "gvarela@gmail.com"
+}
