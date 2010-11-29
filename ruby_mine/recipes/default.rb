@@ -1,5 +1,7 @@
+include_recipe 'git'
+
 application "RubyMine 3.0" do
-  source "http://download.jetbrains.com/ruby/RubyMine-3.0-RC.dmg"
+  source "http://download.jetbrains.com/ruby/RubyMine-3.0.dmg"
 end
 
 bash "setup factory preferences" do
