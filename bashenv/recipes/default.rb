@@ -1,4 +1,4 @@
-package "bash_completion"
+package "bash-completion"
 
 %w(profile rvmrc prompt).each do |dotfile|
   template "/Users/#{node[:homebrew][:user]}/.#{dotfile}" do
