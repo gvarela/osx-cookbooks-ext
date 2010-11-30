@@ -7,15 +7,15 @@ end
 bash "setup factory preferences" do
   user node[:homebrew][:user]
   code <<-EOH
-mkdir -p /Users/#{node[:homebrew][:user]}/Library/Application\ Support/TextMate/Bundles
-mkdir -p /Users/#{node[:homebrew][:user]}/Library/Application\ Support/TextMate/Pristine\ Copy
-mkdir -p /Users/#{node[:homebrew][:user]}/Library/Application\ Support/TextMate/Pristine\ Copy/Bundles
-mkdir -p /Users/#{node[:homebrew][:user]}/Library/Application\ Support/TextMate/Themes
-mkdir -p /Users/#{node[:homebrew][:user]}/Library/Application\ Support/TextMate/Themes/WebPreview
+mkdir -p "/Users/#{node[:homebrew][:user]}/Library/Application Support/TextMate/Bundles"
+mkdir -p "/Users/#{node[:homebrew][:user]}/Library/Application Support/TextMate/Pristine Copy"
+mkdir -p "/Users/#{node[:homebrew][:user]}/Library/Application Support/TextMate/Pristine Copy/Bundles"
+mkdir -p "/Users/#{node[:homebrew][:user]}/Library/Application Support/TextMate/Themes"
+mkdir -p "/Users/#{node[:homebrew][:user]}/Library/Application Support/TextMate/Themes/WebPreview"
 
-cd /Users/#{node[:homebrew][:user]}/Library/Application\ Support/TextMate/
+cd "/Users/#{node[:homebrew][:user]}/Library/Application Support/TextMate/"
 git init
-git remote add origin git://github.com:mkitt/matefiles.git
+git remote add origin git://github.com/mkitt/matefiles.git
 git fetch
 git branch master origin/master
 git reset --hard
