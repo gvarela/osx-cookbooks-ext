@@ -9,6 +9,8 @@ To use with home_cookin you can create a dna.json file that looks similar to the
           "imagemagick": {"ghostscript": true},
           "redis": {"launchd": true},
           "rvm": {"rubies": ["rbx", "ree", "1.9.2"]},
+          "homesick": {"repos": ["git://github.com/gvarela/dot_files.git"]},
+          "basic_brew": {"formulae": ["bash-completion"]},
 
           "cookbooks": ["https://github.com/gvarela/osx-cookbooks/tarball/master",
                         "https://github.com/gvarela/osx-cookbooks-ext/tarball/master"],
@@ -21,9 +23,12 @@ To use with home_cookin you can create a dna.json file that looks similar to the
                       "redis",
                       "memcached",
                       "imagemagick",
-                      "mvim"
+                      "mvim",
+                      "homesick",
+                      "basic_brew"
                     ]
         }
 
 Then run home_cookin
+
         sudo cook dna.json
