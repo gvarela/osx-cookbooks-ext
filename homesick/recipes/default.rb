@@ -6,7 +6,7 @@ gem_package 'homesick'
 
 node[:homesick][:repos].each do |repo|
   bash "homesick clone #{repo}" do
-    castle_name = /\/([^\/]*?)(\.git)?\Z/ ~= repo; $1
+    castle_name = /\/([^\/]*?)(\.git)?\Z/ =~ repo; $1
     code <<-EOS
       homesick clone #{repo}
       homesick symlink #{castle_name}
