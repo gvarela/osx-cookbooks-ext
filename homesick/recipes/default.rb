@@ -9,7 +9,7 @@ node[:homesick][:repos].each do |repo|
     castle_name = /\/([^\/]*?)(\.git)?\Z/ =~ repo; $1
     code <<-EOS
       homesick clone #{repo}
-      homesick symlink #{castle_name}
+      homesick symlink -f #{castle_name}
     EOS
     not_if "test -d /Users/#{node[:homebrew][:user]}/.homesick/repos/#{castle_name}", :user => node[:homebrew][:user]
   end
