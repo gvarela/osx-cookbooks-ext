@@ -1,0 +1,32 @@
+{
+  "version": "0.1.0",
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "license": "Apache",
+  "dependencies": {
+  },
+  "attributes": {
+  },
+  "conflicting": {
+  },
+  "recipes": {
+  },
+  "providing": {
+  },
+  "description": "Sets up some nice git configuration settings",
+  "maintainer": "Jay Zeschin",
+  "replacing": {
+  },
+  "name": "gitconfig",
+  "maintainer_email": "jay.zeschin@factorylabs.com",
+  "long_description": "",
+  "groupings": {
+  },
+  "platforms": {
+    "mac_os_x": [
+
+    ]
+  }
+}

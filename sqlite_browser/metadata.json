@@ -1,0 +1,32 @@
+{
+  "version": "0.1.0",
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "license": "Apache",
+  "dependencies": {
+  },
+  "attributes": {
+  },
+  "conflicting": {
+  },
+  "recipes": {
+  },
+  "providing": {
+  },
+  "description": "Installs SQLite Browser",
+  "maintainer": "Jay Zeschin",
+  "replacing": {
+  },
+  "name": "sqlite_browser",
+  "maintainer_email": "jay.zeschin@factorylabs.com",
+  "long_description": "",
+  "groupings": {
+  },
+  "platforms": {
+    "mac_os_x": [
+
+    ]
+  }
+}

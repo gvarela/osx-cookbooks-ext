@@ -1,0 +1,38 @@
+{
+  "version": "0.1.0",
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "license": "Apache 2.0",
+  "dependencies": {
+    "homebrew": [
+
+    ]
+  },
+  "attributes": {
+  },
+  "conflicting": {
+  },
+  "recipes": {
+  },
+  "providing": {
+  },
+  "description": "Installs/Configures Freeimage",
+  "maintainer": "Jay Zeschin",
+  "replacing": {
+  },
+  "name": "freeimage",
+  "maintainer_email": "jay.zeschin@factorylabs.com",
+  "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n",
+  "groupings": {
+  },
+  "platforms": {
+    "mac_os_x": [
+
+    ],
+    "ubuntu": [
+
+    ]
+  }
+}
