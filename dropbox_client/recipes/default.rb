@@ -18,5 +18,5 @@
 #
 
 application 'Dropbox' do
-  source 'https://www.dropbox.com/download?plat=mac'
+  source 'http://cdn.dropbox.com/Dropbox%201.1.35.dmg'
 end
