@@ -1,3 +1,3 @@
 application 'Firefox' do
-  source 'http://download.mozilla.org/?product=firefox-4.0.1&os=osx&lang=en-US'
+  source 'http://mozilla.mirror.nexicom.net/firefox/releases/4.0.1/mac/en-US/Firefox%204.0.1.dmg'
 end
