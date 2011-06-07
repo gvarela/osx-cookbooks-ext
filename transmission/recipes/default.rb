@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: divvy
+# Cookbook Name:: skype
 # Recipe:: default
 #
 # Copyright 2011, Jay Zeschin
