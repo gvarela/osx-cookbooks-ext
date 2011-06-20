@@ -36,6 +36,7 @@ git_settings = {
   'core.whitespace'         => 'fix,-indent-with-non-tab,trailing-space,cr-at-eol',
   'core.autocrlf'           => 'input',
   'core.quotepath'          => 'false',
+  'core.ignorecase'         => 'false',
   'alias.st'                => 'status',
   'alias.ci'                => 'commit',
   'alias.br'                => 'branch',
