@@ -22,16 +22,19 @@ execute "git clone https://github.com/modeset/dotset.git #{dotset_dir}" do
 end
 
 execute "./dotset install" do
+  not_if { Dir.exist?(dotset_dir)}
   user node[:homebrew][:user]
   cwd dotset_dir
 end
 
 execute "cp #{dotset_dir}/extras/bashrc_local.example #{home_dir}/.bashrc_local" do
+  not_if { File.exist?("#{home_dir}/.bashrc_local")}
   user node[:homebrew][:user]
   cwd dotset_dir
 end
 
 execute "cp #{dotset_dir}/extras/vimrc.local.example #{home_dir}/.vimrc.local" do
+  not_if { File.exist?("#{home_dir}/.vimrc.local")}
   user node[:homebrew][:user]
   cwd dotset_dir
 end
