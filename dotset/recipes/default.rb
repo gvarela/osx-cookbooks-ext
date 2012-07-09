@@ -26,12 +26,12 @@ execute "./dotset install" do
   cwd dotset_dir
 end
 
-execute "cp extras/bashrc_local.example #{home_dir}/.bashrc_local" do
+execute "cp #{dotset_dir}/extras/bashrc_local.example #{home_dir}/.bashrc_local" do
   user node[:homebrew][:user]
   cwd dotset_dir
 end
 
-execute "cp extras/vimrc_local.example #{home_dir}/.vimrc_local" do
+execute "cp #{dotset_dir}/extras/vimrc.local.example #{home_dir}/.vimrc.local" do
   user node[:homebrew][:user]
   cwd dotset_dir
 end
