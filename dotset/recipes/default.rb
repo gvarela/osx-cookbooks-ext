@@ -13,7 +13,7 @@ npm_package "jshint"
 npm_package "jsonlint"
 
 home_dir = "/Users/#{node[:homebrew][:user]}"
-dotset_dir = "#{home_dir}/.dotset"
+dotset_dir = "#{home_dir}/dotset"
 
 execute "git clone https://github.com/modeset/dotset.git #{dotset_dir}" do
   not_if { Dir.exist?(dotset_dir)}
@@ -22,7 +22,7 @@ execute "git clone https://github.com/modeset/dotset.git #{dotset_dir}" do
 end
 
 execute "./dotset install" do
-  not_if { Dir.exist?(dotset_dir)}
+  not_if { File.exist?("#{home_dir}/.bashrc_local")}
   user node[:homebrew][:user]
   cwd dotset_dir
 end
