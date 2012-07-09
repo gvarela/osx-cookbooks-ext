@@ -16,7 +16,7 @@ home_dir = "/Users/#{node[:homebrew][:user]}"
 dotset_dir = "#{home_dir}/.dotset"
 
 execute "git clone https://github.com/modeset/dotset.git #{dotset_dir}" do
-  not_if { File.exist?("dotset")}
+  not_if { File.exist?(".dotset")}
   user node[:homebrew][:user]
   cwd home_dir
 end
