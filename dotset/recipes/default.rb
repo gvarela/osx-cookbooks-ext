@@ -6,9 +6,11 @@ package "ctags"
 package "discount"
 package "macvim"
 package "node"
+package "hub"
 
+npm_package "coffee-script"
 npm_package "jshint"
-npm_package "jsonhint"
+npm_package "jsonlint"
 
 home_dir = "/Users/#{node[:homebrew][:user]}"
 dotset_dir = "#{home_dir}/dotset"
