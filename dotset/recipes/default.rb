@@ -13,9 +13,9 @@ npm_package "jshint"
 npm_package "jsonlint"
 
 home_dir = "/Users/#{node[:homebrew][:user]}"
-dotset_dir = "#{home_dir}/dotset"
+dotset_dir = "#{home_dir}/.dotset"
 
-execute "git clone https://github.com/modeset/dotset.git" do
+execute "git clone https://github.com/modeset/dotset.git #{dotset_dir}" do
   not_if { File.exist?("dotset")}
   user node[:homebrew][:user]
   cwd home_dir
