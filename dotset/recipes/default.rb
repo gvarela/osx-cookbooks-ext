@@ -3,7 +3,6 @@ include_recipe "homebrew"
 package "git"
 package "ack"
 package "ctags"
-package "discount"
 package "macvim"
 package "node"
 package "hub"
@@ -16,7 +15,7 @@ home_dir = "/Users/#{node[:homebrew][:user]}"
 dotset_dir = "#{home_dir}/dotset"
 
 execute "git clone https://github.com/modeset/dotset.git #{dotset_dir}" do
-  not_if { Dir.exist?(dotset_dir)}
+  not_if { File.directory?(dotset_dir)}
   user node[:homebrew][:user]
   cwd home_dir
 end
